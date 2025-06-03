@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Signup Form</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <section>
+    <span></span>
+    <!-- Repeat as needed for the background animation -->
+    <div class="signup">
+      <div class="content">
+        <h2>Sign Up</h2>
+        <div class="form">
+          <div class="inputBox">
+            <input type="text" id="username" required>
+            <i>Username</i>
+          </div>
+          <div class="inputBox">
+            <input type="email" id="email" required>
+            <i>Email</i>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password" required>
+            <i>Password</i>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="confirmPassword" required>
+            <i>Confirm Password</i>
+          </div>
+          <div class="links">
+            <a href="login.html">Already have an account?</a>
+          </div>
+          <div href="login.html" class="inputBox">
+            <input   type="submit" value="Signup" onclick="validateForm()">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+title{ text-transform:uppercase ;}
+
+body{
+    background-attachment: fixed;
+   font-family: montserrat,sans-serif ;
+    background-image: url(17973903.jpg);
+
+}
+/*header//////  /////   /   //////      /   //  /   /   /       /*/
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.container{width: 80%;
+margin: auto;}
+.header{
+background : rgba(146, 146, 146, 0.5);/*honnn*/
+position: fixed;
+width: 100%;
+z-index: 10;}
+pd-y{padding: 120px 0;}
+.section-header{
+    padding: 20px 0;
+    text-align: center; 
+}
+.section-header .section-title{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.section-header .line{
+    display: block;
+    width: 100px;
+    height: 5px;
+   margin :10px auto 70px auto;
+    background:rgba(8, 61, 37, 0.9);
+}
+
+
+.header .logo{width: 40%;float: left;}/*هنا 40 بالمية لللوغو وال60 للكتابة بالراس*/
+.header .nav{ 
+    width: 60%;
+    list-style: none; 
+    float: left;
+    /*text-align:right*/
+}
+.clear{clear: both;}/* float هاي والتحتها لحل مشكلة */
+/*.header-content{overflow: hidden;}*/
+
+
+.header .logo img {
+   float: left; 
+   margin: 5px;/*من الطرف اليسار الصورة*/
+}
+
+.header .nav > li{ 
+    display: inline-block; padding: 15px;}/*هنا ليصبح الكلام جنب بعض*/
+
+.header .nav > li > a{ color: rgb(255, 255, 255);
+    text-decoration:none;/*حذف الخط تحت الرابط*/
+    font-size: 16px;
+    display: block;
+    padding: 5px;}
+
+/*.header .nav li a.active:after{width: 100%;}*/
+.header .nav > li > a:after{
+        content: "";
+        width: 0%;
+        height: 3px;
+        background:  #ffffff;
+        display: block; 
+        transition: all 0.3s ease-in-out 0s;     
+    }
+a{text-decoration: none;}
+.header .nav > li > a:hover:after{/*اشارة < مهم فهمها*/
+    width: 100%;
+    }   
+.dropdown{position: relative;}
+.dropdown-menu li a{color: #ffffff;
+margin: 5px;
+line-height: 15px;}   
+    
+.dropdown-menu {
+        list-style: none; /*حذف النقاط من جانب الليستا*/
+        float: left;
+
+        font-family: montserrat,sans-serif ;
+        color:white ;
+    position: absolute;
+    top: 70%;
+    left: -50;
+    z-index: 10;
+    width: 151px;
+    
+    background: rgba(8, 61, 37, 0.5);  
+    transition: opacity 0.5s,visibility 0.5s;
+    opacity: 0;
+    visibility: hidden; }/*تحديدها كليستا مخفية لانها منبسقة*/
+    .dropdown:hover .dropdown-menu{ opacity: 1;/*هنا عند الضغط عليها اصبحت غير مخفية*/
+    visibility: visible;}      
+/*////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.home{ 
+    height: 100vh;
+    background-image: url(images/5.jpg) ;
+    background-repeat: no-repeat;/*لعدم التكرار*/
+    background-size: cover;/*مهمة جدا لجعل صورة الخلفية على حجم الموقع*/
+    position: relative;/*هنا جعلناها طبقة سفلى*/
+}
+.home .home-content{color: white;
+font-family: montserrat,sans-serif;}
+
+.overlay{position: absolute;/*هنا جعلناها طبقة عليا*/
+width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(8, 61, 37, 0.5); /*شفافة*/ }
+
+.home-content{background: rgba(8, 61, 37, 0.5);
+    position: absolute;/*هنا جعلناها طبقة عليا*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+text-align: center; /*توسيط الكلام*/}
+
+.home .title{ font-size: 3rem;
+text-transform: uppercase  ; /*جعل الحروف كبيرة*/}
+
+.home .description{margin: 10px 0;
+color: aliceblue;}
+.home .btn{ width: 120px;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;}
+
+    .home .btn1{margin-right:5px ;}
+    .home .btn2{margin-right:5px ; background: rgba(8, 61, 37);
+    color: #ffffff;}
+button{font-family: montserrat,sans-serif;}/*نوع الخط*/
+
+.hover-opacity:hover{opacity: 0.1;}  /*نسبة الشفافية */  
+
+.hover-opacity{transition: .5s;}/*الوقت المستغرق للتغيير*/
+/*about section*/
+.about {
+    padding: 20px 0;
+}
+
+.about-content{
+    text-align: center;
+    overflow: hidden;
+}
+.about-item{
+
+    width: 30%;
+    float: left;
+    border: 1px solid rgba(8, 61, 37, 0.9);
+    padding: 50px 15px;
+}
+.about-item:hover .about-item-title {
+    color:rgba(255, 255, 255);
+   
+}   
+
+.about-item:hover .icon-50{
+    color:rgba(255, 255, 255);
+
+}
+.about-item.mg{margin: 0% 5%;}
+.icon-50 { font-size: 50px;
+color: rgba(8, 61, 37, 0.9);
+transition: 2s; 
+margin-bottom: 10px; }
+.about-item-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    transition: 1.3s; }
+.about-item-desc{
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.about-item-link{
+    text-transform: capitalize;
+    color:rgba(8, 61, 37, 0.9) ;
+}
+
+.ltr-effect {
+    position: relative;
+}
+.ltr-effect:after{
+    position:absolute;
+    content: "";
+    width: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background: rgba(8, 61, 37, 0.7);
+    z-index: -1;
+transition: 0.5s;
+}
+.ltr-effect:hover:after{ 
+    width: 100%;
+
+}
+/*protfolio section*/
+.protfolio{
+    background:#f9f9f9;
+}
+.protfolio-content{
+    overflow: hidden;
+}
+.protfolio-item{
+    width: 30%;
+   /* height:190px;*/
+    float: left;
+    margin-bottom: 50px;
+    position: relative;
+    padding:  15px;
+}
+.protfolio-item .layer-content{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 61, 37, 0.7);
+    opacity: o;
+    visibility: hidden;
+    transition: opacity 0.5s;
+}
+.protfolio-item:hover .layer-content{
+    opacity: 1;
+    visibility: visible;
+
+}
+.protfolio-item img{
+    width: 100%;
+}
+.protfolio-item.mg{ 
+    margin: 0 5%;
+}
+
+.protfolio-item:hover .layer-content-title,
+.protfolio-item:hover .layer-content a,
+.protfolio-item:hover .layer-content .catagory{
+    top: 0;
+    opacity: 1;
+}
+
+.layer-content .layer-info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.layer-content .catagory{
+    font-family: montserrat,sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom:5px ;
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    transition: top 0.5s,opacity 0.5s;
+    transition-delay: 0.2s;
+ }
+
+.layer-content-title{
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom:10px ;
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    transition: top 0.5s,opacity 0.5s;
+    transition-delay: 0.3s;
+}
+.layer-content a{
+    color: #ffffff;
+    position: relative;
+    opacity: 0;
+    top: 10px;
+    transition: top 0.5s,opacity 0.5s;
+    transition-delay: 0.3s;
+}
+.layer-content a i{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.protfolio-item{
+    border: 5px solid  rgba(8, 61, 37, 0.9);
+}

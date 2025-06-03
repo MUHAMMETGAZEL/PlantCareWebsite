@@ -1,0 +1,8 @@
+.section-header{margin:80px;
+color: white; }
+.home-content .about{margin: 10px 0;
+    color: aliceblue; text-transform:capitalize ; padding: 0px ;/*جعل الحروف كبيرة*/}
+.description-about {line-height: 30px;
+    font-size: larger;
+    word-spacing: 6px;
+}

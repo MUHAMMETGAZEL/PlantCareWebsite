@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #4CAF50;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    display: block;
+}
+
+header {
+    margin: 2cm;
+    text-align: center;
+    padding: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+section {
+    margin: 20px;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+}
+title{ text-transform:uppercase ;
+padding-top: 200ch;
+margin-bottom: 200cm;
+
+}
+.bitki-h1{
+background: rgba(8, 61, 37, 0.5);
+    position: absolute;/*هنا جعلناها طبقة عليا*/
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+text-align: center; /*توسيط الكلام*/}
+#searchInput {
+    width: 20%;
+    right: 5%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border: 2px solid #ddd;
+}

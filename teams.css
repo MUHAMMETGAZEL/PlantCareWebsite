@@ -1,0 +1,113 @@
+
+body{
+    background-attachment: fixed;
+   font-family: montserrat,sans-serif ;
+    background-image: url(17973903.jpg);
+
+}
+.home{ 
+    height: 100vh;
+    background-image: url(images/5.jpg) ;
+    background-repeat: no-repeat;/*لعدم التكرار*/
+    background-size: cover;/*مهمة جدا لجعل صورة الخلفية على حجم الموقع*/
+    position: relative;/*هنا جعلناها طبقة سفلى*/
+}
+
+.home .home-content{color: white;
+    font-family: montserrat,sans-serif;}
+    
+    .overlay{position: absolute;/*هنا جعلناها طبقة عليا*/
+    width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:rgba(8, 61, 37, 0.5); /*شفافة*/ }
+    
+    .home-content{background: rgba(8, 61, 37, 0.5);
+        position: absolute;/*هنا جعلناها طبقة عليا*/
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  }
+
+
+        /*////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.section-title{
+    margin-top: 80px; color:white; 
+}
+pd-y{padding: 120px 0;}
+.section-header{
+    padding: 20px 0;
+    text-align: center; 
+}
+.team{
+
+}
+.team-content{
+    overflow: hidden;
+    float: left;
+}
+.team-item{
+    margin: 1%;
+    top: 50%;
+        left: 50%;
+    width: 30%;
+    float: left;
+    background:rgba(146, 146, 146, 0.5);
+    padding: 40px 10px;
+    text-align: center;
+}
+.team-item .team-img{
+
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.team-item .team-img img{
+    width: 100%;
+}
+.team-item .team-info-title{
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+    transition: color 0.5s;
+}/*class="team-item tb-effect1"*/
+.team-item .team-info-text{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.5s;
+}
+.team-overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background:rgba(8, 61, 37, 0.5);
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.team-overlay a {
+    display: block;
+    width: 40px; height: 40px;
+    background: #000;
+    color:white ;
+    margin-left:auto ;
+}
+.team-overlay a i { line-height: 40px; }
+.team-item:hover .team-info-title{
+    color: white;
+}
+.team-item:hover .team-info-text{color: white;}
+
+.team-item:hover .team-overlay{
+    visibility: visible;
+    opacity: 1;
+}
+.team-item.tb-effect{
+    z-index: 1;
+}
+.team-item .mg{
+    margin: 0 5% ;
+}
